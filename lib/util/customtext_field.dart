@@ -5,6 +5,7 @@ class CustomTextField extends StatelessWidget {
   CustomTextField(
       {super.key,
       required this.heading,
+      required this.input,
       //  required this.helperText,
       required this.prefix,
       this.isVisible = false});
@@ -13,6 +14,7 @@ class CustomTextField extends StatelessWidget {
   Icon prefix;
   bool isVisible;
   String heading;
+  TextInputType input;
 
   @override
   Widget build(BuildContext context) {
@@ -31,6 +33,7 @@ class CustomTextField extends StatelessWidget {
             height: 55,
             width: 500,
             child: TextFormField(
+              keyboardType:input ,
                 decoration: InputDecoration(
               border: InputBorder.none,
               //  helperText: helperText,

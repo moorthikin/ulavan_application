@@ -22,6 +22,7 @@ class Home extends StatelessWidget {
         Routes.signup: (context) => const SignupScreen(),
         Routes.homeScreen: (context) => const HomeScreen()
       },
+      // theme: ThemeData.dark(),
       themeMode: ThemeMode.system,
       debugShowCheckedModeBanner: false,
     );

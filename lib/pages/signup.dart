@@ -26,29 +26,34 @@ class _SignupScreenState extends State<SignupScreen> {
             children: [
               CustomTextField(
                 heading: "Name",
+                input: TextInputType.text,
                 //helperText: "Enter your name",
                 prefix: const Icon(Icons.person),
               ),
               addSize(10),
               CustomTextField(
                 heading: "Email",
+                input: TextInputType.emailAddress,
                 //helperText: "Enter your password",
                 prefix: const Icon(Icons.mail),
               ),
               addSize(10),
               CustomTextField(
                 heading: "Phone",
+                input: TextInputType.number,
                 //helperText: "Enter your password",
                 prefix: const Icon(Icons.phone),
               ),
               addSize(10),
               CustomTextField(
                 heading: "Password",
+                input: TextInputType.text,
                 //helperText: "Enter your password",
                 prefix: const Icon(Icons.lock),
               ),
               addSize(10),
               CustomTextField(
+                input: TextInputType.text,
                 heading: "Confirm Password",
                 //helperText: "Enter your password",
                 prefix: const Icon(Icons.remove_red_eye),

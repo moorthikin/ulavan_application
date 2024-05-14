@@ -16,12 +16,14 @@ class Login extends StatelessWidget {
       children: [
         CustomTextField(
           heading: "Email",
+          input: TextInputType.emailAddress,
           //helperText: "Enter your name",
           prefix: const Icon(Icons.person),
         ),
         addSize(10),
         CustomTextField(
           heading: "password",
+           input: TextInputType.text,
           //helperText: "Enter your password",
           prefix: const Icon(Icons.lock),
         ),
